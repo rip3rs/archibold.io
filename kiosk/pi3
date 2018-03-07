@@ -35,7 +35,7 @@ ExecStart=-/usr/sbin/agetty -nia alarm %I
 ">/etc/systemd/system/getty@tty1.service.d/override.conf
 
 # install graphic drivers (watch out info about your card)
-pacman -S --needed --noconfirm mesa libva-vdpau-driver libva-mesa-driver
+pacman -S --needed --noconfirm  mesa libva-vdpau-driver libva-mesa-driver gstreamer gst-libav gst-plugins-good
 
 # install X11
 pacman -S --needed --noconfirm xorg-server xorg-xinit xorg-xset
